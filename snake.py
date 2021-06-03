@@ -118,7 +118,7 @@ class Game(Mode):
 
         for coord in app.snake:
             coordinates = app.getBounds(coord[0], coord[1])
-            canvas.create_oval(coordinates[0],coordinates[2],coordinates[1],coordinates[3], fill = 'Black')
+            canvas.create_oval(coordinates[0],coordinates[2],coordinates[1],coordinates[3], fill = 'Blue')
 
         headCoord = app.getBounds(app.head[0], app.head[1])
         canvas.create_oval(headCoord[0],headCoord[2],headCoord[1],headCoord[3], fill = 'Green')
